@@ -1,0 +1,11 @@
+<button (click)="buttonClick()">Display Details</button>
+<p *ngIf="showContent">
+  Algum conteúdo recomendado pelo professor.
+</p>
+
+<p
+*ngFor="let number of numberList"
+[ngClass]="{'blue-background': number >= 5}"
+>
+  {{number}}
+</p>
